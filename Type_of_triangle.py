@@ -5,10 +5,9 @@ def type_finding(a, b, c):
         return "Равносторонний"
     elif a == b != c or a == c != b or b == c != a:
         return "Равнобедренный"
-    elif sides[0]**2 == sides[1]**2 + sides[2]**2:
+    elif sides[0] ** 2 == sides[1] ** 2 + sides[2] ** 2:
         return "Прямоугольный"
     else:
         return "Обычный"
 
-
-#print(type_finding(3, 4, 5))
+# print(type_finding(3, 4, 5))
