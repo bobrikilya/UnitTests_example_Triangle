@@ -3,9 +3,9 @@ def type_finding(a, b, c):
     sides.sort(reverse=True)
     if a == b == c:
         return "Равносторонний"
-    elif a == b != c or a == c != b or b == c != a:
+    elif a == b or a == c or b == c:
         return "Равнобедренный"
-    elif sides[0] ** 2 == sides[1] ** 2 + sides[2] ** 2:
+    elif sides[0]**2 == sides[1]**2 + sides[2]**2:
         return "Прямоугольный"
     else:
         return "Обычный"
