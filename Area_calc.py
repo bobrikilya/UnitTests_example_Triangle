@@ -10,6 +10,9 @@ def area_calc(a, b, c):
 
 
 def check_triangle(a, b, c):
+    for i in [a, b, c]:
+        if i < 0:
+            return False
     p = (a + b + c) / 2
     try:
         sqrt(p * (p - a) * (p - b) * (p - c))
