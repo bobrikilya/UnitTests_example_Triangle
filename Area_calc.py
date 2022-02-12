@@ -8,4 +8,13 @@ def area_calc(a, b, c):
     except ValueError:
         raise ValueError("Такого треугольника не существует")
 
+
+def check_triangle(a, b, c):
+    p = (a + b + c) / 2
+    try:
+        sqrt(p * (p - a) * (p - b) * (p - c))
+        return True
+    except ValueError:
+        return False
+
 # print(area_calc(2, 3, 0))
