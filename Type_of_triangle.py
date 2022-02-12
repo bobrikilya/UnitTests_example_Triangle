@@ -10,4 +10,3 @@ def type_finding(a, b, c):
     else:
         return "Обычный"
 
-# print(type_finding(3, 4, 5))
